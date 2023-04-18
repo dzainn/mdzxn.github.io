@@ -1,0 +1,79 @@
+:root {
+  margin: 0;
+  padding: 0;
+}
+
+/* color */
+:root {
+  --color-default: #3f4e4f;
+  --color-primary: #a27b5c;
+  --color-secondary: #2c3639;
+}
+/* end color */
+
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Quicksand:wght@300&display=swap");
+/* end font */
+
+body {
+  font-family: QuickSand, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: var(--color-primary);
+}
+
+/* start navbar */
+
+nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px 0 70px;
+  border-bottom: dashed rgba(146, 146, 146, 0.377);
+  border-radius: 10px;
+}
+
+#navbar-img {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  border: solid 3px;
+  margin-bottom: 5px;
+}
+
+ul {
+  display: flex;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
+li {
+  padding: 15px;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* End Navbar */
+
+/* Start Header */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.description {
+  width: 250px;
+}
+.description h2 {
+  font-family: DynaPuff;
+}
+
+.gambar-hero {
+  margin-left: 70px;
+  height: 300px;
+  width: 300px;
+}
+
+/* End Header */
