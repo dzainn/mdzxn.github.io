@@ -31,6 +31,7 @@ nav {
   border-bottom: dashed var(--color-secondary);
   border-radius: 0 0 10px 10px;
   background-color: var(--color-default);
+  height: 60px;
 }
 
 #navbar-img {
@@ -68,7 +69,6 @@ li:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
 }
 
 .description {
@@ -97,21 +97,99 @@ h3 {
   padding: 50px;
   display: flex;
   justify-content: space-around;
-  margin-top: 50px;
+  border-top: dashed var(--color-default);
+  background-color: var(--color-secondary);
 }
+
+.about h1 {
+  position: absolute;
+  margin-bottom: 2px;
+  text-decoration: underline var(--color-default);
+}
+
 .about div {
   padding: 20px;
   width: 350px;
+  margin-top: 90px;
 }
 
-.about div.p1 {
-  text-align: left;
-}
+/* Responsive */
 
-.about div .p2 {
-  text-align: center;
-}
+@media (max-width: 768px) {
+  .container {
+  }
 
-.about div .p3 {
-  text-align: right;
+  .gambar-hero {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gambar-hero {
+    height: 250px;
+    width: 250px;
+    margin-right: 10vh;
+  }
+
+  .description {
+    height: 250px;
+    width: 250px;
+    margin-top: 55px;
+    margin-left: 40%;
+
+    text-align: center;
+  }
+  .description h2,
+  h3 {
+    font-family: DynaPuff;
+  }
+  /* navbar */
+
+  nav {
+    padding: 0 25px 0 25px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  #navbar-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: solid 3px var(--color-secondary);
+    margin-right: 10px;
+  }
+  /* about */
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: dashed var(--color-default);
+    background-color: var(--color-secondary);
+    flex-direction: column;
+  }
+
+  .about h1 {
+    position: relative;
+  }
+  .about .desc {
+    height: fit-content;
+  }
+
+  .about .desc h3 {
+    text-align: center;
+  }
+
+  .about .desc p {
+    text-align: center;
+  }
 }
