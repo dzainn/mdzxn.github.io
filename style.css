@@ -5,9 +5,9 @@
 
 /* color */
 :root {
-  --color-default: #3f4e4f;
-  --color-primary: #a27b5c;
-  --color-secondary: #2c3639;
+  --color-default: #44749d;
+  --color-primary: #c6d4e1;
+  --color-secondary: #ffffff;
 }
 /* end color */
 
@@ -16,7 +16,7 @@
 /* end font */
 
 body {
-  font-family: QuickSand, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: QuickSand, Geneva, Verdana, sans-serif;
   background-color: var(--color-primary);
 }
 
@@ -27,17 +27,22 @@ nav {
   align-items: baseline;
   justify-content: space-between;
   align-items: center;
-  padding: 0 70px 0 70px;
-  border-bottom: dashed rgba(146, 146, 146, 0.377);
-  border-radius: 10px;
+  padding: 0 50px 0 50px;
+  border-bottom: dashed var(--color-secondary);
+  border-radius: 0 0 10px 10px;
+  background-color: var(--color-default);
 }
 
 #navbar-img {
   height: 60px;
   width: 60px;
   border-radius: 100%;
-  border: solid 3px;
+  border: solid 3px var(--color-secondary);
   margin-bottom: 5px;
+}
+
+#navbar-img :hover {
+  color: var(--color-secondary);
 }
 
 ul {
@@ -52,6 +57,9 @@ li {
   list-style: none;
 }
 
+li:hover {
+  color: var(--color-secondary);
+}
 /* End Navbar */
 
 /* Start Header */
@@ -64,16 +72,46 @@ li {
 }
 
 .description {
-  width: 250px;
+  width: 300px;
+  margin-right: 140px;
 }
-.description h2 {
+.description h2,
+h3 {
   font-family: DynaPuff;
 }
 
 .gambar-hero {
-  margin-left: 70px;
+  margin-left: 140px;
   height: 300px;
   width: 300px;
 }
 
-/* End Header */
+.gambar-hero:hover {
+}
+
+/* End Hero */
+
+/* start about */
+
+.about {
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.about div {
+  padding: 20px;
+  width: 350px;
+}
+
+.about div.p1 {
+  text-align: left;
+}
+
+.about div .p2 {
+  text-align: center;
+}
+
+.about div .p3 {
+  text-align: right;
+}
