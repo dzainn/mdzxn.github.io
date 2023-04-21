@@ -17,24 +17,54 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Quicksand:wght@300&display=swap");
 /* end font */
 
+<<<<<<< HEAD
 /* nav */
+=======
+body {
+  font-family: QuickSand, Geneva, Verdana, sans-serif;
+  background-color: var(--color-primary);
+}
+
+/* start navbar */
+
+>>>>>>> ac9f9671b5e8ecd0eccd4049ae2a4bc0d61b0a52
 nav {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+<<<<<<< HEAD
   height: auto;
   background-color: var(--color-default);
   border-bottom: dashed 5px var(--color-secondary);
   border-radius: 0 0 10px 10px;
   padding: 0 50px 0 50px;
+=======
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 0 50px;
+  border-bottom: dashed var(--color-secondary);
+  border-radius: 0 0 10px 10px;
+  background-color: var(--color-default);
+  height: 60px;
+>>>>>>> ac9f9671b5e8ecd0eccd4049ae2a4bc0d61b0a52
 }
 
 .navbar-img {
   width: 60px;
+<<<<<<< HEAD
   height: 60px;
   border: solid 2px var(--color-secondary);
   border-radius: 90px;
   margin-left: 40px;
+=======
+  border-radius: 100%;
+  border: solid 3px var(--color-secondary);
+  margin-bottom: 5px;
+>>>>>>> ac9f9671b5e8ecd0eccd4049ae2a4bc0d61b0a52
+}
+
+#navbar-img :hover {
+  color: var(--color-secondary);
 }
 
 ul {
@@ -48,7 +78,14 @@ li {
   list-style: none;
 }
 
+<<<<<<< HEAD
 /* end navbar */
+=======
+li:hover {
+  color: var(--color-secondary);
+}
+/* End Navbar */
+>>>>>>> ac9f9671b5e8ecd0eccd4049ae2a4bc0d61b0a52
 
 /* header */
 .container-desc {
@@ -60,8 +97,12 @@ li {
 
 .description {
   width: 300px;
+<<<<<<< HEAD
   justify-content: center;
   margin: 30px;
+=======
+  margin-right: 140px;
+>>>>>>> ac9f9671b5e8ecd0eccd4049ae2a4bc0d61b0a52
 }
 .description h2,
 h3 {
@@ -69,28 +110,45 @@ h3 {
 }
 
 .gambar-hero {
+<<<<<<< HEAD
   /* margin-left: 140px; */
+=======
+  margin-left: 140px;
+>>>>>>> ac9f9671b5e8ecd0eccd4049ae2a4bc0d61b0a52
   height: 300px;
   width: 300px;
   margin: 30px 30px 30px 140px;
 }
 
+<<<<<<< HEAD
 /* end header */
+=======
+.gambar-hero:hover {
+}
+
+/* End Hero */
+>>>>>>> ac9f9671b5e8ecd0eccd4049ae2a4bc0d61b0a52
 
 /* start about */
 
 .about {
   padding: 50px;
+<<<<<<< HEAD
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-template-rows: repeat(5, auto);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   justify-content: space-center;
+=======
+  display: flex;
+  justify-content: space-around;
+>>>>>>> ac9f9671b5e8ecd0eccd4049ae2a4bc0d61b0a52
   border-top: dashed var(--color-default);
   background-color: var(--color-secondary);
 }
 
+<<<<<<< HEAD
 .about .h-about {
   /* grid-area: "header"; */
   grid-area: 1 / 1 / 2 / 4;
@@ -148,11 +206,68 @@ h3 {
 
 @media (max-width: 567px) {
   /* start navbar */
+=======
+.about h1 {
+  position: absolute;
+  margin-bottom: 2px;
+  text-decoration: underline var(--color-default);
+}
+
+.about div {
+  padding: 20px;
+  width: 350px;
+  margin-top: 90px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .container {
+  }
+
+  .gambar-hero {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gambar-hero {
+    height: 250px;
+    width: 250px;
+    margin-right: 10vh;
+  }
+
+  .description {
+    height: 250px;
+    width: 250px;
+    margin-top: 55px;
+    margin-left: 40%;
+
+    text-align: center;
+  }
+  .description h2,
+  h3 {
+    font-family: DynaPuff;
+  }
+  /* navbar */
+
+  nav {
+    padding: 0 25px 0 25px;
+  }
+>>>>>>> ac9f9671b5e8ecd0eccd4049ae2a4bc0d61b0a52
 
   ul {
     display: none;
   }
 
+<<<<<<< HEAD
   /* end navbar */
 
   /* star desc */
@@ -237,4 +352,38 @@ h3 {
   }
 
   /* end about */
+=======
+  #navbar-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: solid 3px var(--color-secondary);
+    margin-right: 10px;
+  }
+  /* about */
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: dashed var(--color-default);
+    background-color: var(--color-secondary);
+    flex-direction: column;
+  }
+
+  .about h1 {
+    position: relative;
+  }
+  .about .desc {
+    height: fit-content;
+  }
+
+  .about .desc h3 {
+    text-align: center;
+  }
+
+  .about .desc p {
+    text-align: center;
+  }
+>>>>>>> ac9f9671b5e8ecd0eccd4049ae2a4bc0d61b0a52
 }
