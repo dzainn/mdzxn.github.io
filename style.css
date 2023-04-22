@@ -1,6 +1,10 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+body {
   background-color: var(--color-primary);
   box-sizing: border-box;
 }
@@ -25,7 +29,7 @@ nav {
   height: auto;
   background-color: var(--color-default);
   border-bottom: dashed 5px var(--color-secondary);
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 20px 20px;
   padding: 0 50px 0 50px;
 }
 
@@ -35,6 +39,7 @@ nav {
   border: solid 2px var(--color-secondary);
   border-radius: 90px;
   margin-left: 40px;
+  background-color: var(--color-primary);
 }
 
 ul {
@@ -126,23 +131,28 @@ h3 {
 /* end about */
 
 /* album */
-
-.header {
+.header-album {
   text-align: center;
-  padding: 32px;
+  margin: 70px 0 50px 0;
+  text-decoration: underline var(--color-secondary);
 }
 
 .container-foto {
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
-  grid-gap: 15px;
+  display: grid;
+  width: 75%%;
+  grid-template-columns: repeat(auto-fit, minmax(20%, auto));
+  text-align: center;
+  justify-content: space-between;
+  margin: 70px;
 }
 
-.foto {
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
+.item {
+  width: 100%;
+  padding: 5px;
+  border-radius: 15px;
 }
+
+/* end album  */
 
 /* Responsive breakpoint */
 
@@ -214,7 +224,7 @@ h3 {
   }
 
   .about div {
-    margin: 25px;
+    margin: 25px 5px 25px 5px;
   }
 
   .about .a {
@@ -236,4 +246,13 @@ h3 {
   }
 
   /* end about */
+
+  /* album */
+
+  .container-foto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* end albumn */
 }
